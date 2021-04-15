@@ -71,6 +71,10 @@ public class TestClassOne extends BaseTest {
         extent.endTest(test);
     }
 
+    public void testGitHub(){
+        /* Testing GitHub */
+        
+    }
 
     @AfterTest
     public void tearDown() {
