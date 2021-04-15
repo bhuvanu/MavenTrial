@@ -25,6 +25,7 @@ public class TestClassOne extends BaseTest {
 
     @Test(priority = 1)
     public void actualTest() throws InterruptedException {
+        /* start test */
         test=extent.startTest("Navigating to the Browser");
         System.out.println("Inside Actual test");
         reportInfo("Navigating to the Browser");
@@ -72,7 +73,7 @@ public class TestClassOne extends BaseTest {
 
 
     @AfterTest
-    public void tearDown() throws InterruptedException {
+    public void tearDown() {
         //reportInfo("Ending test Run");
         //extent.endTest(test);
         extent.flush();
